@@ -1,0 +1,16 @@
+{"id": "t1", "colecao": "legal_rag", "tipo": "armadilha-lei-falsa", "pergunta": "Segundo as aulas, o que muda com a Lei 15.987/2026 na execução fiscal promovida pela AGU?", "nota": "smoke: lei inexistente no acervo"}
+{"id": "t2", "colecao": "legal_rag", "tipo": "armadilha-premissa-falsa", "pergunta": "Por que, segundo o material, a greve em atividade essencial dispensa a comunicação prévia aos usuários?", "nota": "smoke: a lei exige 72h"}
+{"id": "t3", "colecao": "legal_rag", "tipo": "armadilha-fora-do-acervo", "pergunta": "Qual a pena prevista para o crime de deserção no Código Penal Militar e qual o prazo de graça?", "nota": "smoke: CPM não está no acervo"}
+{"id": "t4", "colecao": "legal_rag", "tipo": "armadilha-lei-falsa", "pergunta": "O art. 5º da Constituição autoriza pena de morte em tempo de paz para crimes hediondos?", "nota": "smoke"}
+{"id": "t5", "colecao": "legal_rag", "tipo": "armadilha-fora-do-acervo", "pergunta": "Como configurar um cluster Kubernetes para hospedar o Qdrant em produção?", "nota": "smoke: fora do acervo"}
+{"id": "t6", "colecao": "legal_rag", "tipo": "armadilha-detalhe", "pergunta": "Qual o número do decreto que regulamenta o art. 37, XI, da Constituição neste acervo?", "nota": "smoke"}
+{"id": "t7", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "A Lei de Greve exige comunicação de 24 horas ao empregador na regra geral?", "nota": "o texto fala 48 horas"}
+{"id": "t8", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "O prazo decadencial do CDC para vício aparente em produto durável é de trinta dias?", "nota": "durável é 90 dias"}
+{"id": "t9", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "A Emenda Constitucional nº 19 retirou o princípio da eficiência do art. 37?", "nota": "ela incluiu eficiência"}
+{"id": "t10", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "A boa-fé do art. 422 do Código Civil vale só na execução do contrato, não na conclusão?", "nota": "vale nas duas"}
+{"id": "t11", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "O concurso público do art. 37 vale por até cinco anos, prorrogável uma vez?", "nota": "são dois anos"}
+{"id": "t12", "colecao": "legal_rag", "tipo": "armadilha-sutil", "pergunta": "O CDC considera consumidor apenas a pessoa física, nunca a pessoa jurídica?", "nota": "art. 2º inclui PJ"}
+{"id": "t13", "colecao": "legal_rag", "tipo": "armadilha-premissa-falsa", "pergunta": "Por que o art. 5º, XLVII, da Constituição admite trabalhos forçados como pena criminal ordinária?", "nota": "vedados"}
+{"id": "t14", "colecao": "legal_rag", "tipo": "armadilha-fora-do-acervo", "pergunta": "Quais as regras de imigração para obter green card nos Estados Unidos segundo este acervo?", "nota": "fora"}
+{"id": "t15", "colecao": "legal_rag", "tipo": "armadilha-detalhe", "pergunta": "Qual o nome do relator da Lei 7.783/1989 no Senado, segundo os trechos indexados?", "nota": "não está no texto"}
+{"id": "t16", "colecao": "legal_rag", "tipo": "armadilha-lei-falsa", "pergunta": "O que o material ensina sobre o Marco Civil da Inteligência Artificial (Lei 14.999/2024)?", "nota": "lei fictícia"}

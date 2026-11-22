@@ -1,0 +1,16 @@
+{"pergunta": "Quais são os cinco princípios da administração pública no art. 37 da Constituição e o que a sigla LIMPE resume?", "area": "constitucional", "expected_ids": ["cf-art37"], "fonte": "CF/88 art. 37"}
+{"pergunta": "Qual a antecedência mínima da notificação da greve ao empregador na regra geral e nos serviços essenciais, segundo a Lei 7.783/1989?", "area": "trabalho", "expected_ids": ["lei-greve-7783"], "fonte": "Lei 7.783/1989 arts. 3 e 13"}
+{"pergunta": "Quais os prazos decadenciais para reclamar de vício aparente em produto não durável e em produto durável no CDC, e quando começa a contar o prazo do vício oculto?", "area": "consumidor", "expected_ids": ["cdc-direitos"], "fonte": "CDC art. 26"}
+{"pergunta": "Homens e mulheres são iguais em direitos e obrigações, nos termos da Constituição?", "area": "constitucional", "expected_ids": ["cf-art5"], "fonte": "CF/88 art. 5º, I"}
+{"pergunta": "A casa é asilo inviolável. Em quais hipóteses se pode nela penetrar sem consentimento do morador?", "area": "constitucional", "expected_ids": ["cf-art5"], "fonte": "CF/88 art. 5º, XI"}
+{"pergunta": "O Estado promoverá, na forma da lei, a defesa de qual sujeito de direitos previsto no art. 5º, XXXII?", "area": "constitucional", "expected_ids": ["cf-art5"], "fonte": "CF/88 art. 5º, XXXII"}
+{"pergunta": "Qual o prazo de validade do concurso público no art. 37, III, da Constituição?", "area": "constitucional", "expected_ids": ["cf-art37"], "fonte": "CF/88 art. 37, III"}
+{"pergunta": "As pessoas jurídicas de direito público respondem pelos danos que seus agentes causarem a terceiros? Há direito de regresso?", "area": "constitucional", "expected_ids": ["cf-art37"], "fonte": "CF/88 art. 37, § 6º"}
+{"pergunta": "Quem convoca a assembleia geral que delibera sobre a paralisação coletiva na Lei de Greve?", "area": "trabalho", "expected_ids": ["lei-greve-7783"], "fonte": "Lei 7.783/1989 art. 4º"}
+{"pergunta": "Transporte coletivo é serviço essencial para fins da Lei de Greve?", "area": "trabalho", "expected_ids": ["lei-greve-7783"], "fonte": "Lei 7.783/1989 art. 10, V"}
+{"pergunta": "O que o CDC considera consumidor no art. 2º?", "area": "consumidor", "expected_ids": ["cdc-direitos"], "fonte": "CDC art. 2º"}
+{"pergunta": "Não sendo o vício sanado no prazo máximo de trinta dias, quais as três alternativas do consumidor no art. 18, § 1º, do CDC?", "area": "consumidor", "expected_ids": ["cdc-direitos"], "fonte": "CDC art. 18, § 1º"}
+{"pergunta": "O que o art. 421 do Código Civil diz sobre a liberdade de contratar?", "area": "civil", "expected_ids": ["cc-contratos"], "fonte": "CC art. 421"}
+{"pergunta": "Os contratantes devem guardar probidade e boa-fé na conclusão e na execução do contrato?", "area": "civil", "expected_ids": ["cc-contratos"], "fonte": "CC art. 422"}
+{"pergunta": "A prática do racismo é crime inafiançável e imprescritível?", "area": "constitucional", "expected_ids": ["cf-art5"], "fonte": "CF/88 art. 5º, XLII"}
+{"pergunta": "Ninguém será considerado culpado até qual marco processual?", "area": "constitucional", "expected_ids": ["cf-art5"], "fonte": "CF/88 art. 5º, LVII"}

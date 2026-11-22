@@ -1,0 +1,14 @@
+.env
+.env.*
+!.env.example
+.venv/
+data/
+models/
+*.log
+__pycache__/
+eval/reports/**
+!eval/reports/.gitkeep
+eval/.judge_cache.jsonl
+.worktrees/
+eval/.llm_cache/
+*.partial.jsonl

@@ -1,0 +1,71 @@
+name: rag-mcp
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.16.2
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+    environment:
+      QDRANT__SERVICE__API_KEY: ${QDRANT_API_KEY:-}
+    volumes:
+      - qdrant-storage:/qdrant/storage
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+
+  ingest:
+    build: .
+    profiles: ["ingest"]
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      COLLECTION_NAME: ${COLLECTION_NAME:-legal_rag}
+      EMBED_MODEL: ${EMBED_MODEL:-intfloat/multilingual-e5-large}
+      HF_HOME: /models
+      FASTEMBED_CACHE_DIR: /models
+      HF_HUB_DISABLE_SHARED_BLOBS: "1"
+    volumes:
+      - ./sample/corpus:/app/data:ro
+      - models:/models
+    command: python -m ingest.ingest
+
+  mcp:
+    build: .
+    restart: unless-stopped
+    depends_on:
+      qdrant:
+        condition: service_healthy
+    ports:
+      - "${MCP_PORT:-8000}:8000"
+    environment:
+      QDRANT_URL: http://qdrant:6333
+      QDRANT_API_KEY: ${QDRANT_API_KEY:-}
+      COLLECTION_NAME: ${COLLECTION_NAME:-legal_rag}
+      COLLECTION_NAMES: ${COLLECTION_NAMES:-}
+      EMBED_MODEL: ${EMBED_MODEL:-intfloat/multilingual-e5-large}
+      RERANK_MODEL: ${RERANK_MODEL:-jinaai/jina-reranker-v2-base-multilingual}
+      RAG_RERANK: ${RAG_RERANK:-1}
+      MCP_TRANSPORT: http
+      MCP_HOST: 0.0.0.0
+      MCP_PORT: "8000"
+      MCP_HTTP_PATH: /mcp
+      MCP_ALLOWED_HOSTS: ${MCP_ALLOWED_HOSTS:-localhost,127.0.0.1}
+      MCP_AUTH_TOKEN: ${MCP_AUTH_TOKEN:?set MCP_AUTH_TOKEN in .env (>=16 chars)}
+      HF_HOME: /models
+      FASTEMBED_CACHE_DIR: /models
+      HF_HUB_DISABLE_SHARED_BLOBS: "1"
+      LLM_PROVIDER: ${LLM_PROVIDER:-claude-cli}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+    volumes:
+      - models:/models
+
+volumes:
+  qdrant-storage:
+  models:
